@@ -1,6 +1,5 @@
-import { createApp } from "vue";
+import { createApp, Vue } from "vue";
 import App from "./App.vue";
-
-const app = createApp(App);
-app.mount("#app");
-app.config.devtools = true;
+Vue.config.productionTip = false;
+Vue.config.devtools = true;
+createApp(App).mount("#app");
